@@ -1,0 +1,467 @@
+
+DROP DATABASE IF EXISTS employee_db;
+CREATE DATABASE IF NOT EXISTS employee_db;
+USE employee_db;
+
+SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
+
+DROP TABLE IF EXISTS region,
+                     country,
+                     location,
+                     job,  
+                     department,
+                     dependent,
+                     employee;
+
+   set storage_engine = InnoDB;
+-- set storage_engine = MyISAM;
+-- set storage_engine = Falcon;
+-- set storage_engine = PBXT;
+-- set storage_engine = Maria;
+
+select CONCAT('storage engine: ', @@storage_engine) as INFO;
+
+
+
+
+
+
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: May 03, 2020 at 05:53 PM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `employee_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `country`
+--
+
+CREATE TABLE `country` (
+  `country_id` char(2) NOT NULL,
+  `country_name` varchar(40) DEFAULT NULL,
+  `region_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `country`
+--
+
+INSERT INTO `country` (`country_id`, `country_name`, `region_id`) VALUES
+('AR', 'Argentina', 2),
+('AU', 'Australia', 3),
+('BE', 'Belgium', 1),
+('BR', 'Brazil', 2),
+('CA', 'Canada', 2),
+('CH', 'Switzerland', 1),
+('CN', 'China', 3),
+('DE', 'Germany', 1),
+('DK', 'Denmark', 1),
+('EG', 'Egypt', 4),
+('FR', 'France', 1),
+('HK', 'HongKong', 3),
+('IL', 'Israel', 4),
+('IN', 'India', 3),
+('IT', 'Italy', 1),
+('JP', 'Japan', 3),
+('KW', 'Kuwait', 4),
+('MX', 'Mexico', 2),
+('NG', 'Nigeria', 4),
+('NL', 'Netherlands', 1),
+('SG', 'Singapore', 3),
+('UK', 'United Kingdom', 1),
+('US', 'United States of America', 2),
+('ZM', 'Zambia', 4),
+('ZW', 'Zimbabwe', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `department`
+--
+
+CREATE TABLE `department` (
+  `department_id` int(11) NOT NULL,
+  `department_name` varchar(30) NOT NULL,
+  `location_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `department`
+--
+
+INSERT INTO `department` (`department_id`, `department_name`, `location_id`) VALUES
+(1, 'Administration', 1700),
+(2, 'Marketing', 1800),
+(3, 'Purchasing', 1700),
+(4, 'Human Resources', 2400),
+(5, 'Shipping', 1500),
+(6, 'IT', 1400),
+(7, 'Public Relations', 2700),
+(8, 'Sales', 2500),
+(9, 'Executive', 1700),
+(10, 'Finance', 1700),
+(11, 'Accounting', 1700);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dependent`
+--
+
+CREATE TABLE `dependent` (
+  `dependent_id` int(11) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `relationship` varchar(25) NOT NULL,
+  `employee_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `dependent`
+--
+
+INSERT INTO `dependent` (`dependent_id`, `first_name`, `last_name`, `relationship`, `employee_id`) VALUES
+(1, 'Penelope', 'Gietz', 'Child', 206),
+(2, 'Nick', 'Higgins', 'Child', 205),
+(3, 'Ed', 'Whalen', 'Child', 200),
+(4, 'Jennifer', 'King', 'Child', 100),
+(5, 'Johnny', 'Kochhar', 'Child', 101),
+(6, 'Bette', 'De Haan', 'Child', 102),
+(7, 'Grace', 'Faviet', 'Child', 109),
+(8, 'Matthew', 'Chen', 'Child', 110),
+(9, 'Joe', 'Sciarra', 'Child', 111),
+(10, 'Christian', 'Urman', 'Child', 112),
+(11, 'Zero', 'Popp', 'Child', 113),
+(12, 'Karl', 'Greenberg', 'Child', 108),
+(13, 'Uma', 'Mavris', 'Child', 203),
+(14, 'Vivien', 'Hunold', 'Child', 103),
+(15, 'Cuba', 'Ernst', 'Child', 104),
+(16, 'Fred', 'Austin', 'Child', 105),
+(17, 'Helen', 'Pataballa', 'Child', 106),
+(18, 'Dan', 'Lorentz', 'Child', 107),
+(19, 'Bob', 'Hartstein', 'Child', 201),
+(20, 'Lucille', 'Fay', 'Child', 202),
+(21, 'Kirsten', 'Baer', 'Child', 204),
+(22, 'Elvis', 'Khoo', 'Child', 115),
+(23, 'Sandra', 'Baida', 'Child', 116),
+(24, 'Cameron', 'Tobias', 'Child', 117),
+(25, 'Kevin', 'Himuro', 'Child', 118),
+(26, 'Rip', 'Colmenares', 'Child', 119),
+(27, 'Julia', 'Raphaely', 'Child', 114),
+(28, 'Woody', 'Russell', 'Child', 145),
+(29, 'Alec', 'Partners', 'Child', 146),
+(30, 'Sandra', 'Taylor', 'Child', 176);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employee`
+--
+
+CREATE TABLE `employee` (
+  `employee_id` int(11) NOT NULL,
+  `first_name` varchar(20) DEFAULT NULL,
+  `last_name` varchar(25) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone_number` varchar(20) DEFAULT NULL,
+  `hire_date` date NOT NULL,
+  `job_id` int(11) NOT NULL,
+  `salary` decimal(8,2) NOT NULL,
+  `manager_id` int(11) DEFAULT NULL,
+  `department_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`employee_id`, `first_name`, `last_name`, `email`, `phone_number`, `hire_date`, `job_id`, `salary`, `manager_id`, `department_id`) VALUES
+(100, 'Steven', 'King', 'steven.king@sqltutorial.org', '515.123.4567', '1987-06-17', 4, '24000.00', NULL, 9),
+(101, 'Neena', 'Kochhar', 'neena.kochhar@sqltutorial.org', '515.123.4568', '1989-09-21', 5, '17000.00', 100, 9),
+(102, 'Lex', 'De Haan', 'lex.de haan@sqltutorial.org', '515.123.4569', '1993-01-13', 5, '17000.00', 100, 9),
+(103, 'Alexander', 'Hunold', 'alexander.hunold@sqltutorial.org', '590.423.4567', '1990-01-03', 9, '9000.00', 102, 6),
+(104, 'Bruce', 'Ernst', 'bruce.ernst@sqltutorial.org', '590.423.4568', '1991-05-21', 9, '6000.00', 103, 6),
+(105, 'David', 'Austin', 'david.austin@sqltutorial.org', '590.423.4569', '1997-06-25', 9, '4800.00', 103, 6),
+(106, 'Valli', 'Pataballa', 'valli.pataballa@sqltutorial.org', '590.423.4560', '1998-02-05', 9, '4800.00', 103, 6),
+(107, 'Diana', 'Lorentz', 'diana.lorentz@sqltutorial.org', '590.423.5567', '1999-02-07', 9, '4200.00', 103, 6),
+(108, 'Nancy', 'Greenberg', 'nancy.greenberg@sqltutorial.org', '515.124.4569', '1994-08-17', 7, '12000.00', 101, 10),
+(109, 'Daniel', 'Faviet', 'daniel.faviet@sqltutorial.org', '515.124.4169', '1994-08-16', 6, '9000.00', 108, 10),
+(110, 'John', 'Chen', 'john.chen@sqltutorial.org', '515.124.4269', '1997-09-28', 6, '8200.00', 108, 10),
+(111, 'Ismael', 'Sciarra', 'ismael.sciarra@sqltutorial.org', '515.124.4369', '1997-09-30', 6, '7700.00', 108, 10),
+(112, 'Jose Manuel', 'Urman', 'jose manuel.urman@sqltutorial.org', '515.124.4469', '1998-03-07', 6, '7800.00', 108, 10),
+(113, 'Luis', 'Popp', 'luis.popp@sqltutorial.org', '515.124.4567', '1999-12-07', 6, '6900.00', 108, 10),
+(114, 'Den', 'Raphaely', 'den.raphaely@sqltutorial.org', '515.127.4561', '1994-12-07', 14, '11000.00', 100, 3),
+(115, 'Alexander', 'Khoo', 'alexander.khoo@sqltutorial.org', '515.127.4562', '1995-05-18', 13, '3100.00', 114, 3),
+(116, 'Shelli', 'Baida', 'shelli.baida@sqltutorial.org', '515.127.4563', '1997-12-24', 13, '2900.00', 114, 3),
+(117, 'Sigal', 'Tobias', 'sigal.tobias@sqltutorial.org', '515.127.4564', '1997-07-24', 13, '2800.00', 114, 3),
+(118, 'Guy', 'Himuro', 'guy.himuro@sqltutorial.org', '515.127.4565', '1998-11-15', 13, '2600.00', 114, 3),
+(119, 'Karen', 'Colmenares', 'karen.colmenares@sqltutorial.org', '515.127.4566', '1999-08-10', 13, '2500.00', 114, 3),
+(120, 'Matthew', 'Weiss', 'matthew.weiss@sqltutorial.org', '650.123.1234', '1996-07-18', 19, '8000.00', 100, 5),
+(121, 'Adam', 'Fripp', 'adam.fripp@sqltutorial.org', '650.123.2234', '1997-04-10', 19, '8200.00', 100, 5),
+(122, 'Payam', 'Kaufling', 'payam.kaufling@sqltutorial.org', '650.123.3234', '1995-05-01', 19, '7900.00', 100, 5),
+(123, 'Shanta', 'Vollman', 'shanta.vollman@sqltutorial.org', '650.123.4234', '1997-10-10', 19, '6500.00', 100, 5),
+(126, 'Irene', 'Mikkilineni', 'irene.mikkilineni@sqltutorial.org', '650.124.1224', '1998-09-28', 18, '2700.00', 120, 5),
+(145, 'John', 'Russell', 'john.russell@sqltutorial.org', NULL, '1996-10-01', 15, '14000.00', 100, 8),
+(146, 'Karen', 'Partners', 'karen.partners@sqltutorial.org', NULL, '1997-01-05', 15, '13500.00', 100, 8),
+(176, 'Jonathon', 'Taylor', 'jonathon.taylor@sqltutorial.org', NULL, '1998-03-24', 16, '8600.00', 100, 8),
+(177, 'Jack', 'Livingston', 'jack.livingston@sqltutorial.org', NULL, '1998-04-23', 16, '8400.00', 100, 8),
+(178, 'Kimberely', 'Grant', 'kimberely.grant@sqltutorial.org', NULL, '1999-05-24', 16, '7000.00', 100, 8),
+(179, 'Charles', 'Johnson', 'charles.johnson@sqltutorial.org', NULL, '2000-01-04', 16, '6200.00', 100, 8),
+(192, 'Sarah', 'Bell', 'sarah.bell@sqltutorial.org', '650.501.1876', '1996-02-04', 17, '4000.00', 123, 5),
+(193, 'Britney', 'Everett', 'britney.everett@sqltutorial.org', '650.501.2876', '1997-03-03', 17, '3900.00', 123, 5),
+(200, 'Jennifer', 'Whalen', 'jennifer.whalen@sqltutorial.org', '515.123.4444', '1987-09-17', 3, '4400.00', 101, 1),
+(201, 'Michael', 'Hartstein', 'michael.hartstein@sqltutorial.org', '515.123.5555', '1996-02-17', 10, '13000.00', 100, 2),
+(202, 'Pat', 'Fay', 'pat.fay@sqltutorial.org', '603.123.6666', '1997-08-17', 11, '6000.00', 201, 2),
+(203, 'Susan', 'Mavris', 'susan.mavris@sqltutorial.org', '515.123.7777', '1994-06-07', 8, '6500.00', 101, 4),
+(204, 'Hermann', 'Baer', 'hermann.baer@sqltutorial.org', '515.123.8888', '1994-06-07', 12, '10000.00', 101, 7),
+(205, 'Shelley', 'Higgins', 'shelley.higgins@sqltutorial.org', '515.123.8080', '1994-06-07', 2, '12000.00', 101, 11),
+(206, 'William', 'Gietz', 'william.gietz@sqltutorial.org', '515.123.8181', '1994-06-07', 1, '8300.00', 205, 11);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `job`
+--
+
+CREATE TABLE `job` (
+  `job_id` int(11) NOT NULL,
+  `job_title` varchar(35) NOT NULL,
+  `min_salary` decimal(8,2) DEFAULT NULL,
+  `max_salary` decimal(8,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `job`
+--
+
+INSERT INTO `job` (`job_id`, `job_title`, `min_salary`, `max_salary`) VALUES
+(1, 'Public Accountant', '4200.00', '9000.00'),
+(2, 'Accounting Manager', '8200.00', '16000.00'),
+(3, 'Administration Assistant', '3000.00', '6000.00'),
+(4, 'President', '20000.00', '40000.00'),
+(5, 'Administration Vice President', '15000.00', '30000.00'),
+(6, 'Accountant', '4200.00', '9000.00'),
+(7, 'Finance Manager', '8200.00', '16000.00'),
+(8, 'Human Resources Representative', '4000.00', '9000.00'),
+(9, 'Programmer', '4000.00', '10000.00'),
+(10, 'Marketing Manager', '9000.00', '15000.00'),
+(11, 'Marketing Representative', '4000.00', '9000.00'),
+(12, 'Public Relations Representative', '4500.00', '10500.00'),
+(13, 'Purchasing Clerk', '2500.00', '5500.00'),
+(14, 'Purchasing Manager', '8000.00', '15000.00'),
+(15, 'Sales Manager', '10000.00', '20000.00'),
+(16, 'Sales Representative', '6000.00', '12000.00'),
+(17, 'Shipping Clerk', '2500.00', '5500.00'),
+(18, 'Stock Clerk', '2000.00', '5000.00'),
+(19, 'Stock Manager', '5500.00', '8500.00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `location`
+--
+
+CREATE TABLE `location` (
+  `location_id` int(11) NOT NULL,
+  `street_address` varchar(40) DEFAULT NULL,
+  `postal_code` varchar(12) DEFAULT NULL,
+  `city` varchar(30) NOT NULL,
+  `state_province` varchar(25) DEFAULT NULL,
+  `country_id` char(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`location_id`, `street_address`, `postal_code`, `city`, `state_province`, `country_id`) VALUES
+(1400, '2014 Jabberwocky Rd', '26192', 'Southlake', 'Texas', 'US'),
+(1500, '2011 Interiors Blvd', '99236', 'South San Francisco', 'California', 'US'),
+(1700, '2004 Charade Rd', '98199', 'Seattle', 'Washington', 'US'),
+(1800, '147 Spadina Ave', 'M5V 2L7', 'Toronto', 'Ontario', 'CA'),
+(2400, '8204 Arthur St', NULL, 'London', NULL, 'UK'),
+(2500, 'Magdalen Centre, The Oxford Science Park', 'OX9 9ZB', 'Oxford', 'Oxford', 'UK'),
+(2700, 'Schwanthalerstr. 7031', '80925', 'Munich', 'Bavaria', 'DE');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `region`
+--
+
+CREATE TABLE `region` (
+  `region_id` int(11) NOT NULL,
+  `region_name` varchar(25) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `region`
+--
+
+INSERT INTO `region` (`region_id`, `region_name`) VALUES
+(1, 'Europe'),
+(2, 'Americas'),
+(3, 'Asia'),
+(4, 'Middle East and Africa');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `country`
+--
+ALTER TABLE `country`
+  ADD PRIMARY KEY (`country_id`),
+  ADD KEY `region_id` (`region_id`);
+
+--
+-- Indexes for table `department`
+--
+ALTER TABLE `department`
+  ADD PRIMARY KEY (`department_id`),
+  ADD KEY `location_id` (`location_id`);
+
+--
+-- Indexes for table `dependent`
+--
+ALTER TABLE `dependent`
+  ADD PRIMARY KEY (`dependent_id`),
+  ADD KEY `employee_id` (`employee_id`);
+
+--
+-- Indexes for table `employee`
+--
+ALTER TABLE `employee`
+  ADD PRIMARY KEY (`employee_id`),
+  ADD KEY `job_id` (`job_id`),
+  ADD KEY `department_id` (`department_id`),
+  ADD KEY `manager_id` (`manager_id`);
+
+--
+-- Indexes for table `job`
+--
+ALTER TABLE `job`
+  ADD PRIMARY KEY (`job_id`);
+
+--
+-- Indexes for table `location`
+--
+ALTER TABLE `location`
+  ADD PRIMARY KEY (`location_id`),
+  ADD KEY `country_id` (`country_id`);
+
+--
+-- Indexes for table `region`
+--
+ALTER TABLE `region`
+  ADD PRIMARY KEY (`region_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `department`
+--
+ALTER TABLE `department`
+  MODIFY `department_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `dependent`
+--
+ALTER TABLE `dependent`
+  MODIFY `dependent_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+--
+-- AUTO_INCREMENT for table `employee`
+--
+ALTER TABLE `employee`
+  MODIFY `employee_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+
+--
+-- AUTO_INCREMENT for table `job`
+--
+ALTER TABLE `job`
+  MODIFY `job_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `location`
+--
+ALTER TABLE `location`
+  MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2701;
+
+--
+-- AUTO_INCREMENT for table `region`
+--
+ALTER TABLE `region`
+  MODIFY `region_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `country`
+--
+ALTER TABLE `country`
+  ADD CONSTRAINT `country_ibfk_1` FOREIGN KEY (`region_id`) REFERENCES `region` (`region_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `department`
+--
+ALTER TABLE `department`
+  ADD CONSTRAINT `department_ibfk_1` FOREIGN KEY (`location_id`) REFERENCES `location` (`location_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `dependent`
+--
+ALTER TABLE `dependent`
+  ADD CONSTRAINT `dependent_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employee` (`employee_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `employee`
+--
+ALTER TABLE `employee`
+  ADD CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `job` (`job_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `employee_ibfk_3` FOREIGN KEY (`manager_id`) REFERENCES `employee` (`employee_id`);
+
+--
+-- Constraints for table `location`
+--
+ALTER TABLE `location`
+  ADD CONSTRAINT `location_ibfk_1` FOREIGN KEY (`country_id`) REFERENCES `country` (`country_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
+
+
+
+

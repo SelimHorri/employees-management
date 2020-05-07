@@ -1,0 +1,2491 @@
+2020-05-07 00:04:08.021  INFO 12996 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Starting EmployeesManagementApplication on selim-linuxubuntu with PID 12996 (/home/slim/eclipse-workspace/employees-management/target/classes started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-07 00:04:08.035  INFO 12996 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : No active profile set, falling back to default profiles: default
+2020-05-07 00:04:08.139  INFO 12996 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-07 00:04:08.140  INFO 12996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 00:04:08.140  INFO 12996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 00:04:08.140 DEBUG 12996 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2094f3e6
+2020-05-07 00:04:10.239  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:04:10.241  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-07 00:04:10.292  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.295  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.298  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.301  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.304  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.308  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.310  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:04:10.311  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 0 Elasticsearch repository interfaces.
+2020-05-07 00:04:10.320  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:04:10.320  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-07 00:04:10.330  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.332  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.333  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.334  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.335  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.336  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.337  INFO 12996 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:04:10.337  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-07 00:04:10.352  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:04:10.353  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 00:04:10.451  INFO 12996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 7 JPA repository interfaces.
+2020-05-07 00:04:11.282 DEBUG 12996 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 00:04:11.283 DEBUG 12996 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 00:04:11.283 DEBUG 12996 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2020-05-07 00:04:11.408  INFO 12996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 00:04:11.423  INFO 12996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 00:04:11.424  INFO 12996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-07 00:04:11.582  INFO 12996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 00:04:11.582  INFO 12996 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3442 ms
+2020-05-07 00:04:12.655 DEBUG 12996 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
+2020-05-07 00:04:12.655 DEBUG 12996 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-05-07 00:04:12.721 DEBUG 12996 --- [restartedMain] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2020-05-07 00:04:12.722 DEBUG 12996 --- [restartedMain] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2020-05-07 00:04:12.722 DEBUG 12996 --- [restartedMain] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2020-05-07 00:04:12.797  INFO 12996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 00:04:13.073  INFO 12996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 00:04:13.147  INFO 12996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 00:04:13.270  INFO 12996 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-07 00:04:13.487  INFO 12996 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 00:04:13.645  INFO 12996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-07 00:04:14.516  INFO 12996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 00:04:14.524  INFO 12996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 00:04:15.211  WARN 12996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 00:04:15.376  INFO 12996 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 00:04:15.845  INFO 12996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-07 00:04:15.853  INFO 12996 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 00:04:15.935  INFO 12996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 00:04:15.939  INFO 12996 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Started EmployeesManagementApplication in 8.574 seconds (JVM running for 9.522)
+2020-05-07 00:04:17.643  INFO 12996 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 00:04:17.644  INFO 12996 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 00:04:17.656  INFO 12996 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-05-07 00:04:25.050  INFO 12996 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-07 00:04:25.051  INFO 12996 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-07 00:04:25.051 DEBUG 12996 --- [RMI TCP Connection(5)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2094f3e6, started on Thu May 07 00:04:08 CET 2020
+2020-05-07 00:04:25.064  INFO 12996 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 00:04:25.069  INFO 12996 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 00:04:25.079  INFO 12996 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-07 00:04:25.104  INFO 12996 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-07 00:13:33.219  INFO 14359 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Starting EmployeesManagementApplication on selim-linuxubuntu with PID 14359 (/home/slim/eclipse-workspace/employees-management/target/classes started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-07 00:13:33.248  INFO 14359 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : No active profile set, falling back to default profiles: default
+2020-05-07 00:13:33.432  INFO 14359 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-07 00:13:33.433  INFO 14359 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 00:13:33.434  INFO 14359 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 00:13:33.434 DEBUG 14359 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70949f41
+2020-05-07 00:13:36.435  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:13:36.438  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-07 00:13:36.538  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.541  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.545  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.548  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.552  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.556  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.561  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:13:36.562  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 0 Elasticsearch repository interfaces.
+2020-05-07 00:13:36.572  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:13:36.574  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-07 00:13:36.584  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.586  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.588  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.589  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.591  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.592  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.594  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:13:36.594  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-07 00:13:36.611  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:13:36.612  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 00:13:36.722  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96ms. Found 7 JPA repository interfaces.
+2020-05-07 00:13:37.885 DEBUG 14359 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 00:13:37.885 DEBUG 14359 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 00:13:37.886 DEBUG 14359 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2020-05-07 00:13:38.004  INFO 14359 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 00:13:38.016  INFO 14359 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 00:13:38.017  INFO 14359 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-07 00:13:38.226  INFO 14359 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 00:13:38.227  INFO 14359 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4793 ms
+2020-05-07 00:13:40.271 DEBUG 14359 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
+2020-05-07 00:13:40.272 DEBUG 14359 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-05-07 00:13:40.322 DEBUG 14359 --- [restartedMain] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2020-05-07 00:13:40.323 DEBUG 14359 --- [restartedMain] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2020-05-07 00:13:40.323 DEBUG 14359 --- [restartedMain] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2020-05-07 00:13:40.407  INFO 14359 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 00:13:40.624  INFO 14359 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 00:13:40.682  INFO 14359 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 00:13:40.761  INFO 14359 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-07 00:13:40.913  INFO 14359 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 00:13:41.043  INFO 14359 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-07 00:13:42.073  INFO 14359 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 00:13:42.080  INFO 14359 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 00:13:42.777  WARN 14359 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-07 00:13:43.004  INFO 14359 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 00:13:43.685  INFO 14359 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-07 00:13:43.693  INFO 14359 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 00:13:43.798  INFO 14359 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 00:13:43.803  INFO 14359 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Started EmployeesManagementApplication in 12.703 seconds (JVM running for 14.403)
+2020-05-07 00:13:45.529  INFO 14359 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 00:13:45.530  INFO 14359 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 00:13:45.541  INFO 14359 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-05-07 00:14:39.613 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        employee0_.employee_id as employee1_3_,
+        employee0_.department_id as departme8_3_,
+        employee0_.email as email2_3_,
+        employee0_.first_name as first_na3_3_,
+        employee0_.hire_date as hire_dat4_3_,
+        employee0_.job_id as job_id9_3_,
+        employee0_.last_name as last_nam5_3_,
+        employee0_.manager_id as manager10_3_,
+        employee0_.phone_number as phone_nu6_3_,
+        employee0_.salary as salary7_3_ 
+    from
+        employee employee0_
+2020-05-07 00:14:40.059 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.330 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.351 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:14:40.378 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-07 00:14:40.479 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.483 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.487 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.490 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.492 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.496 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.499 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.502 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.505 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.508 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.510 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.514 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.515 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.517 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.520 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.522 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.524 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.525 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:14:40.527 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-07 00:14:40.530 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.532 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.534 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.536 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.538 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.540 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.541 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.543 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:14:40.545 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.548 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.553 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.557 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.559 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.561 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.563 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:14:40.565 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:14:40.567 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.569 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:14:40.572 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.573 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:14:40.962 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.097 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.122 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.124 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.127 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.130 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.132 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.135 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.137 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.139 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.142 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.144 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.146 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.148 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.150 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.152 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.154 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.156 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.158 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.160 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.162 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.165 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.167 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.169 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.171 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.173 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.176 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.184 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.188 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.192 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.198 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.202 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.214 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.217 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.221 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.224 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.226 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.229 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.234 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.236 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.239 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.241 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.244 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.247 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.249 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.251 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.253 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.255 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.257 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.259 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.261 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.263 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.265 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.267 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.269 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.271 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.273 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.275 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.277 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.279 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.286 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.292 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.294 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.297 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.299 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.338 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.341 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.343 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.346 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.349 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.351 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.353 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.355 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.362 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.365 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.371 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.373 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.375 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:14:41.377 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-07 00:14:41.379 DEBUG 14359 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-07 00:15:32.691 DEBUG 14359 --- [Thread-7] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70949f41, started on Thu May 07 00:13:33 CET 2020
+2020-05-07 00:15:32.697  INFO 14359 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 00:15:32.702  INFO 14359 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 00:15:32.707  INFO 14359 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-07 00:15:32.718  INFO 14359 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-07 00:15:33.356  INFO 14359 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Starting EmployeesManagementApplication on selim-linuxubuntu with PID 14359 (/home/slim/eclipse-workspace/employees-management/target/classes started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-07 00:15:33.357  INFO 14359 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : No active profile set, falling back to default profiles: default
+2020-05-07 00:15:33.360 DEBUG 14359 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7da8d055
+2020-05-07 00:15:33.800  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:15:33.800  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-07 00:15:33.810  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.812  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.813  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.815  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.817  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.818  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.820  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 00:15:33.820  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Elasticsearch repository interfaces.
+2020-05-07 00:15:33.823  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:15:33.823  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-07 00:15:33.828  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.828  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.829  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.829  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.830  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.830  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.831  INFO 14359 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 00:15:33.831  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-07 00:15:33.836  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 00:15:33.837  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 00:15:33.865  INFO 14359 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 7 JPA repository interfaces.
+2020-05-07 00:15:34.045 DEBUG 14359 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 00:15:34.045 DEBUG 14359 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 00:15:34.045 DEBUG 14359 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2020-05-07 00:15:34.078  INFO 14359 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 00:15:34.079  INFO 14359 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 00:15:34.080  INFO 14359 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-07 00:15:34.092  INFO 14359 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 00:15:34.092  INFO 14359 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 732 ms
+2020-05-07 00:15:34.302 DEBUG 14359 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
+2020-05-07 00:15:34.302 DEBUG 14359 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-05-07 00:15:34.304 DEBUG 14359 --- [restartedMain] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2020-05-07 00:15:34.304 DEBUG 14359 --- [restartedMain] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2020-05-07 00:15:34.304 DEBUG 14359 --- [restartedMain] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2020-05-07 00:15:34.330  INFO 14359 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-05-07 00:15:34.336  INFO 14359 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-05-07 00:15:34.343  INFO 14359 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 00:15:34.351  INFO 14359 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-07 00:15:34.473  INFO 14359 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 00:15:34.474  INFO 14359 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 00:15:34.924  INFO 14359 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 00:15:35.138  INFO 14359 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-07 00:15:35.145  INFO 14359 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 00:15:35.197  INFO 14359 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 00:15:35.198  INFO 14359 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Started EmployeesManagementApplication in 2.031 seconds (JVM running for 125.799)
+2020-05-07 00:15:35.221  INFO 14359 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   JpaBaseConfiguration.JpaWebConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jpa.open-in-view=true) found different value in property 'open-in-view' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-05-07 00:16:17.234  INFO 14359 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 00:16:17.235  INFO 14359 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 00:16:17.242  INFO 14359 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-05-07 00:16:17.264 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        employee0_.employee_id as employee1_3_,
+        employee0_.department_id as departme8_3_,
+        employee0_.email as email2_3_,
+        employee0_.first_name as first_na3_3_,
+        employee0_.hire_date as hire_dat4_3_,
+        employee0_.job_id as job_id9_3_,
+        employee0_.last_name as last_nam5_3_,
+        employee0_.manager_id as manager10_3_,
+        employee0_.phone_number as phone_nu6_3_,
+        employee0_.salary as salary7_3_ 
+    from
+        employee employee0_
+2020-05-07 00:16:17.272 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.274 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.275 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:16:17.277 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-07 00:16:17.279 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.281 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.282 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.283 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.285 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.287 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.288 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.290 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.292 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.293 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.294 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.296 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.297 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.298 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.300 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.301 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.302 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.303 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:16:17.304 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-07 00:16:17.308 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.310 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.311 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.312 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.314 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.315 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.316 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.318 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:16:17.319 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.321 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.323 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.324 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.325 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.326 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.327 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-07 00:16:17.328 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-07 00:16:17.329 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.331 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-07 00:16:17.332 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.333 DEBUG 14359 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-07 00:16:17.415  WARN 14359 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.selimhorri.app.pack.models.entities.Employee.dependents, could not initialize proxy - no Session; nested exception is com.fasterxml.jackson.databind.JsonMappingException: failed to lazily initialize a collection of role: com.selimhorri.app.pack.models.entities.Employee.dependents, could not initialize proxy - no Session (through reference chain: java.util.Collections$UnmodifiableRandomAccessList[0]->com.selimhorri.app.pack.models.entities.Employee["dependents"])]
+2020-05-07 00:16:28.477  INFO 14359 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-07 00:16:28.477 DEBUG 14359 --- [RMI TCP Connection(4)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7da8d055, started on Thu May 07 00:15:33 CET 2020
+2020-05-07 00:16:28.481  INFO 14359 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 00:16:28.483  INFO 14359 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 00:16:28.484  INFO 14359 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-05-07 00:16:28.490  INFO 14359 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-05-07 04:43:21.295  INFO 10420 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Starting EmployeesManagementApplication on selim-linuxubuntu with PID 10420 (/home/slim/eclipse-workspace/employees-management/target/classes started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-07 04:43:21.370  INFO 10420 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : No active profile set, falling back to default profiles: default
+2020-05-07 04:43:21.472  INFO 10420 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-07 04:43:21.473  INFO 10420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-07 04:43:21.474  INFO 10420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-07 04:43:21.474 DEBUG 10420 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a028841
+2020-05-07 04:43:23.455  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:43:23.457  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-07 04:43:23.507  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.510  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.513  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.515  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.518  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.521  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.524  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:43:23.525  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 0 Elasticsearch repository interfaces.
+2020-05-07 04:43:23.535  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:43:23.536  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-07 04:43:23.549  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.551  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.553  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.555  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.557  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.561  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.563  INFO 10420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:43:23.564  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-07 04:43:23.583  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:43:23.583  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 04:43:23.720  INFO 10420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128ms. Found 7 JPA repository interfaces.
+2020-05-07 04:43:24.656 DEBUG 10420 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 04:43:24.656 DEBUG 10420 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: /home/slim/.m2/repository/org/springframework/boot/spring-boot/2.2.6.RELEASE/spring-boot-2.2.6.RELEASE.jar
+2020-05-07 04:43:24.657 DEBUG 10420 --- [restartedMain] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2020-05-07 04:43:24.752  INFO 10420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-07 04:43:24.768  INFO 10420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-07 04:43:24.769  INFO 10420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-07 04:43:24.901  INFO 10420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-07 04:43:24.901  INFO 10420 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3427 ms
+2020-05-07 04:43:25.924 DEBUG 10420 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, corsFilter urls=[/*] order=2147483647
+2020-05-07 04:43:25.924 DEBUG 10420 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-05-07 04:43:25.952 DEBUG 10420 --- [restartedMain] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2020-05-07 04:43:25.953 DEBUG 10420 --- [restartedMain] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2020-05-07 04:43:25.953 DEBUG 10420 --- [restartedMain] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2020-05-07 04:43:26.034  INFO 10420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 04:43:26.240  INFO 10420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 04:43:26.304  INFO 10420 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 04:43:26.409  INFO 10420 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-07 04:43:26.576  INFO 10420 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 04:43:26.709  INFO 10420 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-07 04:43:27.535  INFO 10420 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 04:43:27.543  INFO 10420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 04:43:28.909  INFO 10420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 04:43:29.570  INFO 10420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-07 04:43:29.581  INFO 10420 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 04:43:29.714  INFO 10420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-07 04:43:29.719  INFO 10420 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Started EmployeesManagementApplication in 9.094 seconds (JVM running for 10.141)
+2020-05-07 04:43:30.683  INFO 10420 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-07 04:43:30.684  INFO 10420 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-07 04:43:30.698  INFO 10420 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-05-07 04:43:41.285  INFO 10420 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-07 04:43:41.286 DEBUG 10420 --- [RMI TCP Connection(4)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a028841, started on Thu May 07 04:43:21 CET 2020
+2020-05-07 04:43:41.286  INFO 10420 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-07 04:43:41.299  INFO 10420 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 04:43:41.315  INFO 10420 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 04:43:41.329  INFO 10420 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-07 04:43:41.370  INFO 10420 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-07 04:44:21.325  INFO 10596 --- [main] .a.p.EmployeesManagementApplicationTests : Starting EmployeesManagementApplicationTests on selim-linuxubuntu with PID 10596 (started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-07 04:44:21.331  INFO 10596 --- [main] .a.p.EmployeesManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-05-07 04:44:23.444  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:44:23.449  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-07 04:44:23.542  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.546  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.551  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.556  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.561  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.566  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.574  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:44:23.576  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 0 Elasticsearch repository interfaces.
+2020-05-07 04:44:23.594  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:44:23.597  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-07 04:44:23.615  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.618  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.621  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.624  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.626  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.629  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.632  INFO 10596 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:44:23.633  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-07 04:44:23.652  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:44:23.655  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 04:44:23.806  INFO 10596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 7 JPA repository interfaces.
+2020-05-07 04:44:25.281  INFO 10596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 04:44:25.640  INFO 10596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 04:44:25.800  INFO 10596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 04:44:25.985  INFO 10596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-07 04:44:26.279  INFO 10596 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 04:44:26.523  INFO 10596 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-07 04:44:27.867  INFO 10596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 04:44:27.881  INFO 10596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 04:44:31.538  INFO 10596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 04:44:36.706  INFO 10596 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 04:44:36.903  INFO 10596 --- [main] .a.p.EmployeesManagementApplicationTests : Started EmployeesManagementApplicationTests in 16.303 seconds (JVM running for 18.563)
+2020-05-07 04:44:37.460  INFO 10596 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 04:44:37.471  INFO 10596 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 04:44:37.481  INFO 10596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-07 04:44:37.530  INFO 10596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-07 04:55:28.430  INFO 11517 --- [main] .a.p.EmployeesManagementApplicationTests : Starting EmployeesManagementApplicationTests on selim-linuxubuntu with PID 11517 (started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-07 04:55:28.462  INFO 11517 --- [main] .a.p.EmployeesManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-05-07 04:55:31.212  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:55:31.219  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-05-07 04:55:31.371  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.378  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.383  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.389  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.395  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.400  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.410  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2020-05-07 04:55:31.412  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178ms. Found 0 Elasticsearch repository interfaces.
+2020-05-07 04:55:31.441  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:55:31.443  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-05-07 04:55:31.462  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.CountryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.464  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DepartmentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.467  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.DependentRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.470  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.EmployeeRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.472  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.JobRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.475  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.LocationRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.477  INFO 11517 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.selimhorri.app.pack.repositories.RegionRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-05-07 04:55:31.486  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-05-07 04:55:31.526  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-07 04:55:31.530  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-07 04:55:31.713  INFO 11517 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169ms. Found 7 JPA repository interfaces.
+2020-05-07 04:55:33.701  INFO 11517 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-07 04:55:34.164  INFO 11517 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-07 04:55:34.361  INFO 11517 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-07 04:55:34.507  INFO 11517 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-07 04:55:34.778  INFO 11517 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-07 04:55:35.001  INFO 11517 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-07 04:55:36.155  INFO 11517 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-07 04:55:36.171  INFO 11517 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 04:55:39.429  INFO 11517 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-07 04:55:43.244  INFO 11517 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-07 04:55:43.427  INFO 11517 --- [main] .a.p.EmployeesManagementApplicationTests : Started EmployeesManagementApplicationTests in 16.441 seconds (JVM running for 18.336)
+2020-05-07 04:55:43.966  INFO 11517 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-07 04:55:44.013  INFO 11517 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-07 04:55:44.024  INFO 11517 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-07 04:55:44.058  INFO 11517 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
