@@ -28,11 +28,12 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
+import com.selimhorri.app.pack.models.entities.read_only.EmployeeReadOnly;
 
 @Entity
 @Table(name = "employee")
 @Immutable
-public final class Employee implements Serializable {
+public final class Employee implements EmployeeReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -132,7 +133,7 @@ public final class Employee implements Serializable {
 				+ dependents + ", job=" + job + ", department=" + department + ", manager=" + manager
 				+ ", managers=" + manager + "]";
 	}
-	
+	@Override
 	public Integer getId() {
 		return id;
 	}
@@ -140,7 +141,8 @@ public final class Employee implements Serializable {
 	public void setId(final Integer id) {
 		this.id = id;
 	}
-
+	
+	@Override
 	public String getFirstName() {
 		return firstName;
 	}
@@ -148,7 +150,8 @@ public final class Employee implements Serializable {
 	public void setFirstName(final String firstName) {
 		this.firstName = firstName;
 	}
-
+	
+	@Override
 	public String getLastName() {
 		return lastName;
 	}
@@ -156,7 +159,8 @@ public final class Employee implements Serializable {
 	public void setLastName(final String lastName) {
 		this.lastName = lastName;
 	}
-
+	
+	@Override
 	public String getEmail() {
 		return email;
 	}
@@ -164,7 +168,8 @@ public final class Employee implements Serializable {
 	public void setEmail(final String email) {
 		this.email = email;
 	}
-
+	
+	@Override
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
@@ -172,7 +177,8 @@ public final class Employee implements Serializable {
 	public void setPhoneNumber(final String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
+	
+	@Override
 	public LocalDateTime getHireDate() {
 		return hireDate;
 	}
@@ -180,15 +186,17 @@ public final class Employee implements Serializable {
 	public void setHireDate(final LocalDateTime hireDate) {
 		this.hireDate = hireDate;
 	}
-
-	public double getSalary() {
+	
+	@Override
+	public Double getSalary() {
 		return salary;
 	}
 
-	public void setSalary(final double salary) {
+	public void setSalary(final Double salary) {
 		this.salary = salary;
 	}
-
+	
+	@Override
 	public Set<Dependent> getDependent() {
 		return Collections.unmodifiableSet(this.dependents);
 	}
@@ -196,7 +204,8 @@ public final class Employee implements Serializable {
 	public void setDependent(final Set<Dependent> dependents) {
 		this.dependents = dependents;
 	}
-
+	
+	@Override
 	public Job getJob() {
 		return job;
 	}
@@ -204,7 +213,8 @@ public final class Employee implements Serializable {
 	public void setJob(final Job job) {
 		this.job = job;
 	}
-
+	
+	@Override
 	public Department getDepartment() {
 		return department;
 	}
@@ -212,7 +222,8 @@ public final class Employee implements Serializable {
 	public void setDepartment(final Department department) {
 		this.department = department;
 	}
-
+	
+	@Override
 	public Employee getmanager() {
 		return this.manager;
 	}
@@ -220,7 +231,8 @@ public final class Employee implements Serializable {
 	public void setmanager(final Employee manager) {
 		this.manager = manager;
 	}
-
+	
+	@Override
 	public Set<Employee> getmanagers() {
 		return Collections.unmodifiableSet(this.managers);
 	}

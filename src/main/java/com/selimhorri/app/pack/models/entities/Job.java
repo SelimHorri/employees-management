@@ -17,11 +17,12 @@ import javax.persistence.Table;
 import org.springframework.data.annotation.Immutable;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.selimhorri.app.pack.models.entities.read_only.JobReadOnly;
 
 @Entity(name = "Job")
 @Table(name = "job")
 @Immutable
-public final class Job implements Serializable {
+public final class Job implements JobReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
@@ -71,6 +72,7 @@ public final class Job implements Serializable {
 				+ ", employees=" + employees + "]";
 	}
 	
+	@Override
 	public Integer getId() {
 		return id;
 	}
@@ -78,7 +80,8 @@ public final class Job implements Serializable {
 	public void setId(final Integer id) {
 		this.id = id;
 	}
-
+	
+	@Override
 	public String getJobTitle() {
 		return jobTitle;
 	}
@@ -86,7 +89,8 @@ public final class Job implements Serializable {
 	public void setJobTitle(final String jobTitle) {
 		this.jobTitle = jobTitle;
 	}
-
+	
+	@Override
 	public Double getMinSalary() {
 		return minSalary;
 	}
@@ -94,7 +98,8 @@ public final class Job implements Serializable {
 	public void setMinSalary(final Double minSalary) {
 		this.minSalary = minSalary;
 	}
-
+	
+	@Override
 	public Double getMaxSalary() {
 		return maxSalary;
 	}
@@ -102,7 +107,8 @@ public final class Job implements Serializable {
 	public void setMaxSalary(final Double maxSalary) {
 		this.maxSalary = maxSalary;
 	}
-
+	
+	@Override
 	public Set<Employee> getEmployee() {
 		return Collections.unmodifiableSet(this.employees);
 	}

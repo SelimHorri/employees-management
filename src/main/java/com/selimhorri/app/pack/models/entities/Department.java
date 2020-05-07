@@ -20,11 +20,12 @@ import org.springframework.data.annotation.Immutable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.selimhorri.app.pack.models.entities.read_only.DepartmentReadOnly;
 
 @Entity(name = "Department")
 @Table(name = "department")
 @Immutable
-public final class Department implements Serializable {
+public final class Department implements DepartmentReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -71,6 +72,7 @@ public final class Department implements Serializable {
 				+ employees + "]";
 	}
 	
+	@Override
 	public Integer getId() {
 		return id;
 	}
@@ -79,6 +81,7 @@ public final class Department implements Serializable {
 		this.id = id;
 	}
 	
+	@Override
 	public String getDepartmentName() {
 		return departmentName;
 	}
@@ -86,7 +89,8 @@ public final class Department implements Serializable {
 	public void setDepartmentName(final String departmentName) {
 		this.departmentName = departmentName;
 	}
-
+	
+	@Override
 	public Location getLocation() {
 		return location;
 	}
@@ -94,7 +98,8 @@ public final class Department implements Serializable {
 	public void setLocation(final Location location) {
 		this.location = location;
 	}
-
+	
+	@Override
 	public Set<Employee> getEmployee() {
 		return Collections.unmodifiableSet(this.employees);
 	}

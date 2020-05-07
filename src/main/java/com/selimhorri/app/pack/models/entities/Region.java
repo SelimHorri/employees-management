@@ -14,11 +14,15 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.springframework.data.annotation.Immutable;
+
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.selimhorri.app.pack.models.entities.read_only.RegionReadOnly;
 
 @Entity
 @Table(name = "region")
-public final class Region implements Serializable {
+@Immutable
+public final class Region implements RegionReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -57,6 +61,7 @@ public final class Region implements Serializable {
 		return "Region [id=" + id + ", regionName=" + regionName + ", countries=" + countries + "]";
 	}
 	
+	@Override
 	public Integer getId() {
 		return id;
 	}
@@ -64,7 +69,8 @@ public final class Region implements Serializable {
 	public void setId(final Integer id) {
 		this.id = id;
 	}
-
+	
+	@Override
 	public String getRegionName() {
 		return regionName;
 	}
@@ -72,7 +78,8 @@ public final class Region implements Serializable {
 	public void setRegionName(final String regionName) {
 		this.regionName = regionName;
 	}
-
+	
+	@Override
 	public Set<Country> getCountry() {
 		return Collections.unmodifiableSet(this.countries);
 	}

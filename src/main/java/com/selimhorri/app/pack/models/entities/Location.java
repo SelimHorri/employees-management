@@ -20,11 +20,12 @@ import org.springframework.data.annotation.Immutable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.selimhorri.app.pack.models.entities.read_only.LocationReadOnly;
 
 @Entity
 @Table(name = "location")
 @Immutable
-public final class Location implements Serializable {
+public final class Location implements LocationReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -89,6 +90,7 @@ public final class Location implements Serializable {
 				+ "]";
 	}
 	
+	@Override
 	public Integer getId() {
 		return id;
 	}
@@ -96,7 +98,8 @@ public final class Location implements Serializable {
 	public void setId(final Integer id) {
 		this.id = id;
 	}
-
+	
+	@Override
 	public String getStreetAddress() {
 		return streetAddress;
 	}
@@ -104,7 +107,8 @@ public final class Location implements Serializable {
 	public void setStreetAddress(final String streetAddress) {
 		this.streetAddress = streetAddress;
 	}
-
+	
+	@Override
 	public String getPostalCode() {
 		return postalCode;
 	}
@@ -112,7 +116,8 @@ public final class Location implements Serializable {
 	public void setPostalCode(final String postalCode) {
 		this.postalCode = postalCode;
 	}
-
+	
+	@Override
 	public String getCity() {
 		return city;
 	}
@@ -120,7 +125,8 @@ public final class Location implements Serializable {
 	public void setCity(final String city) {
 		this.city = city;
 	}
-
+	
+	@Override
 	public String getStateProvince() {
 		return stateProvince;
 	}
@@ -128,7 +134,8 @@ public final class Location implements Serializable {
 	public void setStateProvince(final String stateProvince) {
 		this.stateProvince = stateProvince;
 	}
-
+	
+	@Override
 	public Set<Department> getDepartment() {
 		return Collections.unmodifiableSet(this.departments);
 	}
@@ -136,7 +143,8 @@ public final class Location implements Serializable {
 	public void setDepartment(final Set<Department> departments) {
 		this.departments = departments;
 	}
-
+	
+	@Override
 	public Country getCountry() {
 		return country;
 	}
@@ -144,5 +152,7 @@ public final class Location implements Serializable {
 	public void setCountry(final Country country) {
 		this.country = country;
 	}
-
+	
+	
+	
 }

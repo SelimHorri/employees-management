@@ -18,11 +18,12 @@ import org.springframework.data.annotation.Immutable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.selimhorri.app.pack.models.entities.read_only.CountryReadOnly;
 
-@Entity(name = "Country")
+@Entity
 @Table(name = "country")
 @Immutable
-public final class Country implements Serializable {
+public final class Country implements CountryReadOnly, Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -69,30 +70,34 @@ public final class Country implements Serializable {
 				+ "]";
 	}
 	
+	@Override
 	public String getId() {
 		return id;
 	}
-
+	
 	public void setId(final String id) {
 		this.id = id;
 	}
-
+	
+	@Override
 	public String getCountryName() {
 		return countryName;
 	}
-
+	
 	public void setCountryName(final String countryName) {
 		this.countryName = countryName;
 	}
-
+	
+	@Override
 	public Region getRegion() {
 		return region;
 	}
-
+	
 	public void setRegion(final Region region) {
 		this.region = region;
 	}
-
+	
+	@Override
 	public Set<Location> getLocation() {
 		return Collections.unmodifiableSet(this.locations);
 	}

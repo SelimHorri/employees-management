@@ -16,11 +16,12 @@ import javax.persistence.Table;
 import org.springframework.data.annotation.Immutable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.selimhorri.app.pack.models.entities.read_only.DependentReadOnly;
 
 @Entity
 @Table(name = "dependent")
 @Immutable
-public final class Dependent implements Serializable {
+public final class Dependent implements DependentReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -71,6 +72,7 @@ public final class Dependent implements Serializable {
 				+ relationship + ", employee=" + employee + "]";
 	}
 	
+	@Override
 	public Integer getId() {
 		return id;
 	}
@@ -78,7 +80,8 @@ public final class Dependent implements Serializable {
 	public void setId(final Integer id) {
 		this.id = id;
 	}
-
+	
+	@Override
 	public String getFirstName() {
 		return firstName;
 	}
@@ -86,7 +89,8 @@ public final class Dependent implements Serializable {
 	public void setFirstName(final String firstName) {
 		this.firstName = firstName;
 	}
-
+	
+	@Override
 	public String getLastName() {
 		return lastName;
 	}
@@ -94,7 +98,8 @@ public final class Dependent implements Serializable {
 	public void setLastName(final String lastName) {
 		this.lastName = lastName;
 	}
-
+	
+	@Override
 	public String getRelationship() {
 		return relationship;
 	}
@@ -102,7 +107,8 @@ public final class Dependent implements Serializable {
 	public void setRelationship(final String relationship) {
 		this.relationship = relationship;
 	}
-
+	
+	@Override
 	public Employee getEmployee() {
 		return employee;
 	}
