@@ -42,7 +42,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		final Optional<Employee> optional = this.rep.findById(id);
 		
 		if (!optional.isPresent())
-			throw new NoSuchElementApiException("\n------------ NO ELEMENT FOUND !!!!! ------------\n");
+			throw new NoSuchElementApiException("------------ NO ELEMENT FOUND !!!!! ------------");
 		
 		return optional.get();
 	}

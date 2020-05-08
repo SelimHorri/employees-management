@@ -2,7 +2,6 @@ package com.selimhorri.app.pack.services.impls;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Set;
 
 import javax.transaction.Transactional;
@@ -10,6 +9,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.selimhorri.app.pack.exceptions.wrappers.NoSuchElementApiException;
 import com.selimhorri.app.pack.models.entities.Country;
 import com.selimhorri.app.pack.repositories.CountryRepository;
 import com.selimhorri.app.pack.services.CountryService;
@@ -37,13 +37,7 @@ public class CountryServiceImpl implements CountryService {
 	
 	@Override
 	public Country findById(final int id) {
-		
-		final Country c = this.rep.findById(id).get();
-		
-		if (c == null)
-			throw new NoSuchElementException("\n------------ NO ELEMENT FOUND !!!!! ------------\n");
-		
-		return c;
+		return this.rep.findById(id).orElseThrow( () -> new NoSuchElementApiException("------------ NO ELEMENT FOUND !!!!! ------------") );
 	}
 	
 	@Override

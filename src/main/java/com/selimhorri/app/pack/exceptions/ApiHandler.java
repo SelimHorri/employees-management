@@ -25,7 +25,7 @@ public class ApiHandler extends ResponseEntityExceptionHandler {
 		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
 		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
 		
-		// System.err.println(exceptionMsg);
+		System.err.println(exceptionMsg);
 		
 		return new ResponseEntity<>(exceptionMsg, badRequest);
 	}
@@ -36,7 +36,7 @@ public class ApiHandler extends ResponseEntityExceptionHandler {
 		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
 		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
 		
-		// System.err.println(exceptionMsg);
+		System.err.println(exceptionMsg);
 		
 		return new ResponseEntity<>(exceptionMsg, badRequest);
 	}
@@ -47,7 +47,7 @@ public class ApiHandler extends ResponseEntityExceptionHandler {
 		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
 		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
 		
-		// System.err.println(exceptionMsg);
+		System.err.println(exceptionMsg);
 		
 		return new ResponseEntity<>(exceptionMsg, badRequest);
 	}
