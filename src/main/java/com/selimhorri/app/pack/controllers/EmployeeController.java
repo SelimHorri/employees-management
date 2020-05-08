@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.selimhorri.app.pack.exceptions.wrappers.NumberFormatApiException;
 import com.selimhorri.app.pack.models.entities.Employee;
 import com.selimhorri.app.pack.services.EmployeeService;
 
@@ -42,7 +43,7 @@ public class EmployeeController {
 	public ResponseEntity<Employee> findById(@PathVariable("id") final Integer id) {
 		
 		if (id == null)
-			throw new NullPointerException("------------ Missed arg(s) in URL : employee_id ------------");
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : employee_id ------------");
 		
 		return new ResponseEntity<>(this.service.findById(id), HttpStatus.OK);
 	}
@@ -56,7 +57,7 @@ public class EmployeeController {
 		}
 		
 		if (employee == null)
-			throw new NullPointerException("------------ Missed arg(s) in URL : employee ------------");
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : employee ------------");
 		
 		return new ResponseEntity<>(this.service.save(employee), HttpStatus.OK);
 	}
@@ -70,7 +71,7 @@ public class EmployeeController {
 	public void deleteById(@PathVariable("id") final Integer id) {
 
 		if (id == null)
-			throw new NullPointerException("------------ Missed arg(s) in URL : employee_id ------------");
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : employee_id ------------");
 		
 		this.service.deleteById(id);
 	}

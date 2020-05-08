@@ -14,15 +14,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Immutable;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.selimhorri.app.pack.models.entities.read_only.CountryReadOnly;
 
 @Entity
 @Table(name = "country")
-@Immutable
 public final class Country implements CountryReadOnly, Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -36,12 +33,10 @@ public final class Country implements CountryReadOnly, Serializable {
 	
 	@ManyToOne(optional = false, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name = "region_id", nullable = false)
-//	@JsonManagedReference
 	@JsonBackReference
 	private Region region;
 	
 	@OneToMany(mappedBy = "country", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//	@JsonBackReference
 	@JsonManagedReference
 	private Set<Location> locations;
 

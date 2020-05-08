@@ -14,14 +14,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Immutable;
-
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.selimhorri.app.pack.models.entities.read_only.JobReadOnly;
 
-@Entity(name = "Job")
+@Entity
 @Table(name = "job")
-@Immutable
 public final class Job implements JobReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -41,7 +38,6 @@ public final class Job implements JobReadOnly, Serializable {
 	private Double maxSalary;
 	
 	@OneToMany(mappedBy = "job", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//	@JsonBackReference
 	@JsonManagedReference
 	private Set<Employee> employees;
 	

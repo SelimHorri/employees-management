@@ -2,7 +2,7 @@ package com.selimhorri.app.pack.services.impls;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.Optional;
 import java.util.Set;
 
 import javax.transaction.Transactional;
@@ -10,6 +10,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.selimhorri.app.pack.exceptions.wrappers.NoSuchElementApiException;
 import com.selimhorri.app.pack.models.entities.Employee;
 import com.selimhorri.app.pack.repositories.EmployeeRepository;
 import com.selimhorri.app.pack.services.EmployeeService;
@@ -38,13 +39,20 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee findById(final int id) {
 		
-		final Employee e = this.rep.findById(id).get();
+		final Optional<Employee> optional = this.rep.findById(id);
 		
-		if (e == null)
-			throw new NoSuchElementException("\n------------ NO ELEMENT FOUND !!!!! ------------\n");
+		if (!optional.isPresent())
+			throw new NoSuchElementApiException("\n------------ NO ELEMENT FOUND !!!!! ------------\n");
 		
-		return e;
+		return optional.get();
 	}
+	
+	/*
+	@Override
+	public Employee findById(final int id) {
+		return this.rep.findById(id).orElseThrow( () -> new NoSuchElementException("\n------------ NO ELEMENT FOUND !!!!! ------------\n") );
+	}
+	*/
 	
 	@Override
 	public Employee save(final Employee employee) {

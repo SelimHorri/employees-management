@@ -6,6 +6,10 @@ public class NumberFormatApiException extends NumberFormatException implements S
 	
 	private static final long serialVersionUID = 1L;
 	
+	public NumberFormatApiException(final String msg) {
+		super(msg);
+	}
+	
 	
 	
 }

@@ -18,8 +18,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 
-import org.springframework.data.annotation.Immutable;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
@@ -32,7 +30,6 @@ import com.selimhorri.app.pack.models.entities.read_only.EmployeeReadOnly;
 
 @Entity
 @Table(name = "employee")
-@Immutable
 public final class Employee implements EmployeeReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;

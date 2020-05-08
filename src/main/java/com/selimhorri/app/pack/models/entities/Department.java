@@ -16,15 +16,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Immutable;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.selimhorri.app.pack.models.entities.read_only.DepartmentReadOnly;
 
-@Entity(name = "Department")
+@Entity
 @Table(name = "department")
-@Immutable
 public final class Department implements DepartmentReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;

@@ -14,14 +14,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Immutable;
-
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.selimhorri.app.pack.models.entities.read_only.RegionReadOnly;
 
 @Entity
 @Table(name = "region")
-@Immutable
 public final class Region implements RegionReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -35,7 +32,6 @@ public final class Region implements RegionReadOnly, Serializable {
 	private String regionName;
 	
 	@OneToMany(mappedBy = "region", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//    @JsonBackReference
 	@JsonManagedReference
 	private Set<Country> countries;
 	

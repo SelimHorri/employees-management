@@ -13,14 +13,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Immutable;
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.selimhorri.app.pack.models.entities.read_only.DependentReadOnly;
 
 @Entity
 @Table(name = "dependent")
-@Immutable
 public final class Dependent implements DependentReadOnly, Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -41,7 +38,6 @@ public final class Dependent implements DependentReadOnly, Serializable {
 	
 	@ManyToOne(optional = false, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name = "employee_id", nullable = false)
-//	@JsonManagedReference
 	@JsonBackReference
 	private Employee employee;
 
