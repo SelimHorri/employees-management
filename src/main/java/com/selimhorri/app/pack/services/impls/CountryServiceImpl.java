@@ -52,7 +52,7 @@ public class CountryServiceImpl implements CountryService {
 	
 	@Override
 	public void deleteById(final int id) {
-		this.rep.delete(this.findById(id));
+		this.rep.deleteById(id);
 	}
 	
 	

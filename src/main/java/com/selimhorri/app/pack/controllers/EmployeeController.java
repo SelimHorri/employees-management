@@ -27,7 +27,7 @@ import com.selimhorri.app.pack.services.EmployeeService;
 @RequestMapping({"/api/employees", "/api/employee"})
 public class EmployeeController {
 	
-	private final EmployeeService service;
+private final EmployeeService service;
 	
 	@Autowired
 	public EmployeeController(final EmployeeService service) {
@@ -35,17 +35,13 @@ public class EmployeeController {
 	}
 	
 	@GetMapping(value = {"", "/all"})
-	public ResponseEntity<List<Employee>> findAll() {
-		return new ResponseEntity<>(this.service.findAll(), HttpStatus.OK);
+	public List<Employee> findAll() {
+		return this.service.findAll();
 	}
 	
 	@GetMapping(value = {"/{id}", "/get/{id}"})
-	public ResponseEntity<Employee> findById(@PathVariable("id") final Integer id) {
-		
-		if (id == null)
-			throw new NumberFormatApiException("------------ Missed arg(s) in URL : employee_id ------------");
-		
-		return new ResponseEntity<>(this.service.findById(id), HttpStatus.OK);
+	public Employee findById(@PathVariable("id") final Integer id) {
+		return this.service.findById(id);
 	}
 	
 	@PostMapping(value = {"", "/save"})
@@ -57,7 +53,7 @@ public class EmployeeController {
 		}
 		
 		if (employee == null)
-			throw new NumberFormatApiException("------------ Missed arg(s) in URL : employee ------------");
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : " + this.getClass().getSimpleName().replace("Controller", "").toLowerCase() + " ------------");
 		
 		return new ResponseEntity<>(this.service.save(employee), HttpStatus.OK);
 	}
@@ -71,7 +67,7 @@ public class EmployeeController {
 	public void deleteById(@PathVariable("id") final Integer id) {
 
 		if (id == null)
-			throw new NumberFormatApiException("------------ Missed arg(s) in URL : employee_id ------------");
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : id => " + id + " ------------");
 		
 		this.service.deleteById(id);
 	}
