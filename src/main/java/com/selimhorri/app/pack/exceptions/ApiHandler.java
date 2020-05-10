@@ -12,15 +12,21 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import com.selimhorri.app.pack.exceptions.payloads.ExceptionMsg;
-import com.selimhorri.app.pack.exceptions.wrappers.MethodArgumentTypeMismatchApiException;
-import com.selimhorri.app.pack.exceptions.wrappers.NoSuchElementApiException;
-import com.selimhorri.app.pack.exceptions.wrappers.NumberFormatApiException;
 
 @ControllerAdvice
 public class ApiHandler extends ResponseEntityExceptionHandler {
 	
-	@ExceptionHandler(value = {NoSuchElementException.class, NoSuchElementApiException.class})
-	public ResponseEntity<ExceptionMsg> handleInternalErrorMsg(final NoSuchElementApiException exception) {
+	@ExceptionHandler(
+		value = {
+			NoSuchElementException.class,
+			// NoSuchElementApiException.class,
+			NumberFormatException.class,
+			// NumberFormatApiException.class,
+			MethodArgumentTypeMismatchException.class,
+			// NullPointerException.class
+		}
+	)
+	public <T extends RuntimeException> ResponseEntity<ExceptionMsg> handleExceptionsMsg(final T exception) {
 		
 		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
 		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
@@ -29,39 +35,6 @@ public class ApiHandler extends ResponseEntityExceptionHandler {
 		
 		return new ResponseEntity<>(exceptionMsg, badRequest);
 	}
-	
-	@ExceptionHandler(value = {NumberFormatException.class, NumberFormatApiException.class})
-	public ResponseEntity<ExceptionMsg> handleNumberFormatMsg(final NumberFormatApiException exception) {
-		
-		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
-		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
-		
-		System.err.println(exceptionMsg);
-		
-		return new ResponseEntity<>(exceptionMsg, badRequest);
-	}
-	
-	@ExceptionHandler(value = {MethodArgumentTypeMismatchException.class, MethodArgumentTypeMismatchApiException.class})
-	public ResponseEntity<ExceptionMsg> handleMethodArgumentTypeMismatchMsg(final MethodArgumentTypeMismatchException exception) {
-		
-		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
-		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
-		
-		System.err.println(exceptionMsg);
-		
-		return new ResponseEntity<>(exceptionMsg, badRequest);
-	}
-	
-	/*
-	@ExceptionHandler({NullPointerException.class, NullPointerApiException.class})
-	public ResponseEntity<ExceptionMsg> handleInternalErrorMsg(final NoSuchElementApiException exception) {
-		
-		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
-		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
-		
-		return new ResponseEntity<>(exceptionMsg, badRequest);
-	}
-	*/
 	
 	
 	

@@ -1,0 +1,1946 @@
+2020-05-10 01:24:51.844  INFO 31703 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Starting EmployeesManagementApplication on selim-linuxubuntu with PID 31703 (/home/slim/eclipse-workspace/employees-management/target/classes started by slim in /home/slim/eclipse-workspace/employees-management)
+2020-05-10 01:24:51.849  INFO 31703 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : No active profile set, falling back to default profiles: default
+2020-05-10 01:24:51.942  INFO 31703 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/slim/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-05-10 01:24:51.943  INFO 31703 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-10 01:24:51.943  INFO 31703 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-10 01:24:53.242  INFO 31703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-10 01:24:53.271 DEBUG 31703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.selimhorri.app.pack.
+2020-05-10 01:24:53.291 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/CountryRepository.class]
+2020-05-10 01:24:53.292 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/DepartmentRepository.class]
+2020-05-10 01:24:53.292 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/DependentRepository.class]
+2020-05-10 01:24:53.292 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/EmployeeRepository.class]
+2020-05-10 01:24:53.293 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/JobRepository.class]
+2020-05-10 01:24:53.293 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/LocationRepository.class]
+2020-05-10 01:24:53.293 DEBUG 31703 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/slim/eclipse-workspace/employees-management/target/classes/com/selimhorri/app/pack/repositories/RegionRepository.class]
+2020-05-10 01:24:53.389  INFO 31703 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 7 JPA repository interfaces.
+2020-05-10 01:24:54.114  INFO 31703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-10 01:24:54.123  INFO 31703 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-10 01:24:54.124  INFO 31703 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-05-10 01:24:54.206  INFO 31703 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-10 01:24:54.206 DEBUG 31703 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-10 01:24:54.206  INFO 31703 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2262 ms
+2020-05-10 01:24:54.567 DEBUG 31703 --- [restartedMain] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2020-05-10 01:24:54.630  INFO 31703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-10 01:24:55.018  INFO 31703 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-10 01:24:55.102  INFO 31703 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-10 01:24:55.200  INFO 31703 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-10 01:24:55.353  INFO 31703 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-10 01:24:55.473  INFO 31703 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-10 01:24:56.173  INFO 31703 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-10 01:24:56.184  INFO 31703 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-10 01:24:56.264 DEBUG 31703 --- [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2020-05-10 01:24:56.272 DEBUG 31703 --- [restartedMain] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext!
+2020-05-10 01:24:56.457 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.CountryRepository…
+2020-05-10 01:24:56.559 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.CountryRepository.
+2020-05-10 01:24:56.617 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.DepartmentRepository…
+2020-05-10 01:24:56.655 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.DepartmentRepository.
+2020-05-10 01:24:56.683 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.DependentRepository…
+2020-05-10 01:24:56.715 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.DependentRepository.
+2020-05-10 01:24:56.736 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.EmployeeRepository…
+2020-05-10 01:24:56.781 DEBUG 31703 --- [restartedMain] o.s.d.j.r.query.JpaQueryFactory          : Looking up query for method getManagers
+2020-05-10 01:24:56.800 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.EmployeeRepository.
+2020-05-10 01:24:56.817 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.JobRepository…
+2020-05-10 01:24:56.845 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.JobRepository.
+2020-05-10 01:24:56.859 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.LocationRepository…
+2020-05-10 01:24:56.881 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.LocationRepository.
+2020-05-10 01:24:56.895 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.RegionRepository…
+2020-05-10 01:24:56.917 DEBUG 31703 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.RegionRepository.
+2020-05-10 01:24:57.029  WARN 31703 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-10 01:24:57.215  INFO 31703 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-10 01:24:57.236 DEBUG 31703 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-10 01:24:57.325 DEBUG 31703 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 37 mappings in 'requestMappingHandlerMapping'
+2020-05-10 01:24:57.377 DEBUG 31703 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-10 01:24:57.397 DEBUG 31703 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-10 01:24:57.666  INFO 31703 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-05-10 01:24:57.673  INFO 31703 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-10 01:24:57.763  INFO 31703 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-10 01:24:57.767  INFO 31703 --- [restartedMain] c.s.a.p.EmployeesManagementApplication   : Started EmployeesManagementApplication in 6.434 seconds (JVM running for 7.427)
+2020-05-10 01:25:02.647  INFO 31703 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-10 01:25:02.647  INFO 31703 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-10 01:25:02.647 DEBUG 31703 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-05-10 01:25:02.658 DEBUG 31703 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-10 01:25:02.658  INFO 31703 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-05-10 01:25:02.668 DEBUG 31703 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/employees/get/100", parameters={}
+2020-05-10 01:25:02.677 DEBUG 31703 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.selimhorri.app.pack.controllers.EmployeeController#findById(String)
+2020-05-10 01:25:02.736 DEBUG 31703 --- [http-nio-8080-exec-2] stomAnnotationTransactionAttributeSource : Adding transactional method 'findById' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2020-05-10 01:25:02.754 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        employee0_.employee_id as employee1_3_0_,
+        employee0_.department_id as departme8_3_0_,
+        employee0_.email as email2_3_0_,
+        employee0_.first_name as first_na3_3_0_,
+        employee0_.hire_date as hire_dat4_3_0_,
+        employee0_.job_id as job_id9_3_0_,
+        employee0_.last_name as last_nam5_3_0_,
+        employee0_.manager_id as manager10_3_0_,
+        employee0_.phone_number as phone_nu6_3_0_,
+        employee0_.salary as salary7_3_0_ 
+    from
+        employee employee0_ 
+    where
+        employee0_.employee_id=?
+2020-05-10 01:25:02.793 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:02.801 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:02.803 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-10 01:25:02.806 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-10 01:25:02.812 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:02.921 DEBUG 31703 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-10 01:25:02.926 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:02.954 DEBUG 31703 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [java.lang.StackOverflowError]
+2020-05-10 01:25:03.007 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.019 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.023 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.026 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.028 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.030 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:03.033 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.037 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.047 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:03.049 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-10 01:25:03.050 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-10 01:25:03.052 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.054 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.058 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.059 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:03.061 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-10 01:25:03.064 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.067 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.069 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.071 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.073 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.076 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.079 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.082 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.085 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.090 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.096 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.101 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.103 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.107 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.111 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.114 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.117 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.121 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.123 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.126 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.131 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.132 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.134 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.137 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.154 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.160 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.166 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.169 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.171 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.173 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.176 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.179 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:03.181 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.184 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.186 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:03.187 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-10 01:25:03.192 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.194 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.197 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.199 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.203 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.205 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.208 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.215 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.219 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.221 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.224 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.227 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.229 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.231 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.233 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.236 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.240 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.243 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.245 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.279 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.281 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.283 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.285 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.287 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.289 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.292 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.295 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.298 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.300 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.302 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.304 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.306 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.309 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.311 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.314 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.315 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.317 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.319 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.322 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.324 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.327 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.330 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.332 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.334 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.337 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.339 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.342 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.345 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:03.347 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:03.350 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.359 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.363 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.374 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.376 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.378 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.382 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.385 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.388 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.394 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.397 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.399 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.401 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.403 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:03.405 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:03.407 DEBUG 31703 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:03.414 DEBUG 31703 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-05-10 01:25:07.405 DEBUG 31703 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/employees/get/122", parameters={}
+2020-05-10 01:25:07.410 DEBUG 31703 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.selimhorri.app.pack.controllers.EmployeeController#findById(String)
+2020-05-10 01:25:07.415 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        employee0_.employee_id as employee1_3_0_,
+        employee0_.department_id as departme8_3_0_,
+        employee0_.email as email2_3_0_,
+        employee0_.first_name as first_na3_3_0_,
+        employee0_.hire_date as hire_dat4_3_0_,
+        employee0_.job_id as job_id9_3_0_,
+        employee0_.last_name as last_nam5_3_0_,
+        employee0_.manager_id as manager10_3_0_,
+        employee0_.phone_number as phone_nu6_3_0_,
+        employee0_.salary as salary7_3_0_ 
+    from
+        employee employee0_ 
+    where
+        employee0_.employee_id=?
+2020-05-10 01:25:07.417 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:07.419 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:07.421 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        country0_.country_id as country_1_0_0_,
+        country0_.country_name as country_2_0_0_,
+        country0_.region_id as region_i3_0_0_ 
+    from
+        country country0_ 
+    where
+        country0_.country_id=?
+2020-05-10 01:25:07.423 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        region0_.region_id as region_i1_6_0_,
+        region0_.region_name as region_n2_6_0_ 
+    from
+        region region0_ 
+    where
+        region0_.region_id=?
+2020-05-10 01:25:07.427 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:07.432 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        employee0_.employee_id as employee1_3_0_,
+        employee0_.department_id as departme8_3_0_,
+        employee0_.email as email2_3_0_,
+        employee0_.first_name as first_na3_3_0_,
+        employee0_.hire_date as hire_dat4_3_0_,
+        employee0_.job_id as job_id9_3_0_,
+        employee0_.last_name as last_nam5_3_0_,
+        employee0_.manager_id as manager10_3_0_,
+        employee0_.phone_number as phone_nu6_3_0_,
+        employee0_.salary as salary7_3_0_ 
+    from
+        employee employee0_ 
+    where
+        employee0_.employee_id=?
+2020-05-10 01:25:07.441 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        department0_.department_id as departme1_1_0_,
+        department0_.department_name as departme2_1_0_,
+        department0_.location_id as location3_1_0_ 
+    from
+        department department0_ 
+    where
+        department0_.department_id=?
+2020-05-10 01:25:07.443 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        location0_.location_id as location1_5_0_,
+        location0_.city as city2_5_0_,
+        location0_.country_id as country_6_5_0_,
+        location0_.postal_code as postal_c3_5_0_,
+        location0_.state_province as state_pr4_5_0_,
+        location0_.street_address as street_a5_5_0_ 
+    from
+        location location0_ 
+    where
+        location0_.location_id=?
+2020-05-10 01:25:07.446 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        job0_.job_id as job_id1_4_0_,
+        job0_.job_title as job_titl2_4_0_,
+        job0_.max_salary as max_sala3_4_0_,
+        job0_.min_salary as min_sala4_4_0_ 
+    from
+        job job0_ 
+    where
+        job0_.job_id=?
+2020-05-10 01:25:07.458 DEBUG 31703 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-10 01:25:07.459 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:07.462 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        employees0_.job_id as job_id9_3_0_,
+        employees0_.employee_id as employee1_3_0_,
+        employees0_.employee_id as employee1_3_1_,
+        employees0_.department_id as departme8_3_1_,
+        employees0_.email as email2_3_1_,
+        employees0_.first_name as first_na3_3_1_,
+        employees0_.hire_date as hire_dat4_3_1_,
+        employees0_.job_id as job_id9_3_1_,
+        employees0_.last_name as last_nam5_3_1_,
+        employees0_.manager_id as manager10_3_1_,
+        employees0_.phone_number as phone_nu6_3_1_,
+        employees0_.salary as salary7_3_1_ 
+    from
+        employee employees0_ 
+    where
+        employees0_.job_id=?
+2020-05-10 01:25:07.471 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        dependents0_.employee_id as employee5_2_0_,
+        dependents0_.dependent_id as dependen1_2_0_,
+        dependents0_.dependent_id as dependen1_2_1_,
+        dependents0_.employee_id as employee5_2_1_,
+        dependents0_.first_name as first_na2_2_1_,
+        dependents0_.last_name as last_nam3_2_1_,
+        dependents0_.relationship as relation4_2_1_ 
+    from
+        dependent dependents0_ 
+    where
+        dependents0_.employee_id=?
+2020-05-10 01:25:07.480 DEBUG 31703 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [java.lang.StackOverflowError]
+2020-05-10 01:25:07.481 DEBUG 31703 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        managers0_.manager_id as manager10_3_0_,
+        managers0_.employee_id as employee1_3_0_,
+        managers0_.employee_id as employee1_3_1_,
+        managers0_.department_id as departme8_3_1_,
+        managers0_.email as email2_3_1_,
+        managers0_.first_name as first_na3_3_1_,
+        managers0_.hire_date as hire_dat4_3_1_,
+        managers0_.job_id as job_id9_3_1_,
+        managers0_.last_name as last_nam5_3_1_,
+        managers0_.manager_id as manager10_3_1_,
+        managers0_.phone_number as phone_nu6_3_1_,
+        managers0_.salary as salary7_3_1_ 
+    from
+        employee managers0_ 
+    where
+        managers0_.manager_id=?
+2020-05-10 01:25:07.487 DEBUG 31703 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-05-10 01:25:14.741 DEBUG 31703 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/employees/get/122aa", parameters={}
+2020-05-10 01:25:14.743 DEBUG 31703 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.selimhorri.app.pack.controllers.EmployeeController#findById(String)
+2020-05-10 01:25:14.746 DEBUG 31703 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.selimhorri.app.pack.exceptions.ApiHandler#handleExceptionsMsg(RuntimeException)
+2020-05-10 01:25:14.769 DEBUG 31703 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-10 01:25:14.769 DEBUG 31703 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ExceptionMsg [msg=For input string: "122aa", cause=java.lang.NumberFormatException: For input string (truncated)...]
+2020-05-10 01:25:14.771  WARN 31703 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NumberFormatException: For input string: "122aa"]
+2020-05-10 01:25:14.771 DEBUG 31703 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-05-10 01:25:17.494 DEBUG 31703 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/employees/get/", parameters={}
+2020-05-10 01:25:17.496 DEBUG 31703 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.selimhorri.app.pack.controllers.EmployeeController#findById(String)
+2020-05-10 01:25:17.497 DEBUG 31703 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.selimhorri.app.pack.exceptions.ApiHandler#handleExceptionsMsg(RuntimeException)
+2020-05-10 01:25:17.498 DEBUG 31703 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-10 01:25:17.498 DEBUG 31703 --- [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ExceptionMsg [msg=For input string: "get", cause=java.lang.NumberFormatException: For input string:  (truncated)...]
+2020-05-10 01:25:17.500  WARN 31703 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NumberFormatException: For input string: "get"]
+2020-05-10 01:25:17.500 DEBUG 31703 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2020-05-10 01:25:26.670  INFO 31703 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-05-10 01:25:26.677  INFO 31703 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-10 01:25:26.681  INFO 31703 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-10 01:25:26.686  INFO 31703 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-10 01:25:26.696  INFO 31703 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

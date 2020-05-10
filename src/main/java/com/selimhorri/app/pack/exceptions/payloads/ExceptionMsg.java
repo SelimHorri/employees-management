@@ -28,7 +28,7 @@ public final class ExceptionMsg implements Serializable {
 	@JsonDeserialize(using = InstantDeserializer.class)
 	private final ZonedDateTime dateTime;
 	
-	public ExceptionMsg(String msg, Throwable cause, HttpStatus httpStatus, ZonedDateTime dateTime) {
+	public ExceptionMsg(final String msg, final Throwable cause, final HttpStatus httpStatus, final ZonedDateTime dateTime) {
 		super();
 		this.msg = msg;
 		this.cause = cause;

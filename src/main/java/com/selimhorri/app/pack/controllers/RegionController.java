@@ -1,6 +1,7 @@
 package com.selimhorri.app.pack.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -27,7 +28,7 @@ import com.selimhorri.app.pack.services.RegionService;
 @RequestMapping({"/api/regions", "/api/region"})
 public class RegionController {
 	
-private final RegionService service;
+	private final RegionService service;
 	
 	@Autowired
 	public RegionController(final RegionService service) {
@@ -40,8 +41,12 @@ private final RegionService service;
 	}
 	
 	@GetMapping(value = {"/{id}", "/get/{id}"})
-	public Region findById(@PathVariable("id") final Integer id) {
-		return this.service.findById(id);
+	public ResponseEntity<Region> findById(@PathVariable("id") final String id) {
+		
+		if (!Optional.of(id).isPresent())
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : " + this.getClass().getSimpleName().replace("Controller", "").toLowerCase() + " ------------");
+		
+		return new ResponseEntity<>(this.service.findById(Integer.parseInt(id)), HttpStatus.OK);
 	}
 	
 	@PostMapping(value = {"", "/save"})
@@ -52,24 +57,28 @@ private final RegionService service;
 			return null;
 		}
 		
-		if (region == null)
+		if (!Optional.of(region).isPresent())
 			throw new NumberFormatApiException("------------ Missed arg(s) in URL : " + this.getClass().getSimpleName().replace("Controller", "").toLowerCase() + " ------------");
 		
 		return new ResponseEntity<>(this.service.save(region), HttpStatus.OK);
 	}
 	
 	@PutMapping(value = {"/{id}", "/update/{id}"})
-	public ResponseEntity<Region> updateById(@PathVariable("id") final Integer id) {
-		return null;
+	public ResponseEntity<Region> updateById(@PathVariable("id") final String id) {
+		
+		if (!Optional.of(id).isPresent())
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : " + this.getClass().getSimpleName().replace("Controller", "").toLowerCase() + " ------------");
+		
+		return new ResponseEntity<>(this.service.updateById(Integer.parseInt(id)), HttpStatus.OK);
 	}
 	
 	@DeleteMapping(value = {"/{id}", "/delete/{id}"})
-	public void deleteById(@PathVariable("id") final Integer id) {
-
-		if (id == null)
-			throw new NumberFormatApiException("------------ Missed arg(s) in URL : id => " + id + " ------------");
+	public void deleteById(@PathVariable("id") final String id) {
 		
-		this.service.deleteById(id);
+		if (!Optional.of(id).isPresent())
+			throw new NumberFormatApiException("------------ Missed arg(s) in URL : " + this.getClass().getSimpleName().replace("Controller", "").toLowerCase() + " ------------");
+		
+		this.service.deleteById(Integer.parseInt(id));
 	}
 	
 	
