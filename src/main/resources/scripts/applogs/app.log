@@ -1,0 +1,51 @@
+2020-05-15 17:36:49.017  INFO 5637 --- [main] .a.p.EmployeesManagementApplicationTests : Starting EmployeesManagementApplicationTests on selim-linux with PID 5637 (started by selim in /home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management)
+2020-05-15 17:36:49.019  INFO 5637 --- [main] .a.p.EmployeesManagementApplicationTests : No active profile set, falling back to default profiles: default
+2020-05-15 17:36:49.050 DEBUG 5637 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@52c8295b
+2020-05-15 17:36:49.777  INFO 5637 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-15 17:36:49.788 DEBUG 5637 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages com.selimhorri.app.pack.
+2020-05-15 17:36:49.798 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/CountryRepository.class]
+2020-05-15 17:36:49.799 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/DepartmentRepository.class]
+2020-05-15 17:36:49.799 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/DependentRepository.class]
+2020-05-15 17:36:49.800 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/EmployeeRepository.class]
+2020-05-15 17:36:49.800 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/JobRepository.class]
+2020-05-15 17:36:49.800 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/LocationRepository.class]
+2020-05-15 17:36:49.800 DEBUG 5637 --- [main] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [/home/selim/Documents/workspace-spring-tool-suite-4-4.6.1.RELEASE/employees-management/target/classes/com/selimhorri/app/pack/repositories/RegionRepository.class]
+2020-05-15 17:36:49.872  INFO 5637 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 7 JPA repository interfaces.
+2020-05-15 17:36:50.372  INFO 5637 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-15 17:36:50.512  INFO 5637 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-15 17:36:50.558  INFO 5637 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-15 17:36:50.599  INFO 5637 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-15 17:36:50.783  INFO 5637 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-15 17:36:50.850  INFO 5637 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-15 17:36:51.220  INFO 5637 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-15 17:36:51.225  INFO 5637 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 17:36:51.291 DEBUG 5637 --- [main] .c.JpaMetamodelMappingContextFactoryBean : Initializing JpaMetamodelMappingContext…
+2020-05-15 17:36:51.298 DEBUG 5637 --- [main] .c.JpaMetamodelMappingContextFactoryBean : Finished initializing JpaMetamodelMappingContext!
+2020-05-15 17:36:51.486 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.CountryRepository…
+2020-05-15 17:36:51.535 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.CountryRepository.
+2020-05-15 17:36:51.576 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.DepartmentRepository…
+2020-05-15 17:36:51.587 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.DepartmentRepository.
+2020-05-15 17:36:51.608 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.DependentRepository…
+2020-05-15 17:36:51.619 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.DependentRepository.
+2020-05-15 17:36:51.633 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.EmployeeRepository…
+2020-05-15 17:36:51.663 DEBUG 5637 --- [main] o.s.d.j.r.query.JpaQueryFactory          : Looking up query for method getManagers
+2020-05-15 17:36:51.678 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.EmployeeRepository.
+2020-05-15 17:36:51.693 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.JobRepository…
+2020-05-15 17:36:51.703 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.JobRepository.
+2020-05-15 17:36:51.718 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.LocationRepository…
+2020-05-15 17:36:51.727 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.LocationRepository.
+2020-05-15 17:36:51.741 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for com.selimhorri.app.pack.repositories.RegionRepository…
+2020-05-15 17:36:51.755 DEBUG 5637 --- [main] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for com.selimhorri.app.pack.repositories.RegionRepository.
+2020-05-15 17:36:52.019  WARN 5637 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-15 17:36:52.273  INFO 5637 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-15 17:36:52.288 DEBUG 5637 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-15 17:36:52.366 DEBUG 5637 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 37 mappings in 'requestMappingHandlerMapping'
+2020-05-15 17:36:52.412 DEBUG 5637 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-15 17:36:52.427 DEBUG 5637 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-15 17:36:52.703  INFO 5637 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-05-15 17:36:52.742  INFO 5637 --- [main] .a.p.EmployeesManagementApplicationTests : Started EmployeesManagementApplicationTests in 3.989 seconds (JVM running for 4.849)
+2020-05-15 17:36:53.088 DEBUG 5637 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@52c8295b, started on Fri May 15 17:36:49 CET 2020
+2020-05-15 17:36:53.096  INFO 5637 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-15 17:36:53.102  INFO 5637 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-15 17:36:53.106  INFO 5637 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-15 17:36:53.125  INFO 5637 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
