@@ -36,8 +36,8 @@ public class EmployeeController {
 	}
 	
 	@GetMapping(value = {"", "/all"})
-	public List<Employee> findAll() {
-		return this.service.findAll();
+	public ResponseEntity<List<Employee>> findAll() {
+		return new ResponseEntity<>(this.service.findAll(), HttpStatus.OK);
 	}
 	
 	@GetMapping(value = {"/{id}", "/get/{id}"})

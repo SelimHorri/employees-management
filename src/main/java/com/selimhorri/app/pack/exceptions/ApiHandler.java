@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
@@ -26,12 +27,13 @@ public class ApiHandler extends ResponseEntityExceptionHandler {
 			// NullPointerException.class
 		}
 	)
-	public <T extends RuntimeException> ResponseEntity<ExceptionMsg> handleExceptionsMsg(final T exception) {
+	public <T extends RuntimeException> ResponseEntity<ExceptionMsg> handleExceptionsMsg(final T exception, final WebRequest webRequest) {
 		
 		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
-		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), exception, badRequest, ZonedDateTime.now(ZoneId.systemDefault()));
+		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), badRequest, exception, ZonedDateTime.now(ZoneId.systemDefault()));
 		
 		System.err.println(exceptionMsg);
+		System.err.println(webRequest);
 		
 		return new ResponseEntity<>(exceptionMsg, badRequest);
 	}
