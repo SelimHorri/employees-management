@@ -106,3 +106,12 @@ public final class Department implements DepartmentReadOnly, Serializable {
 	}
 
 }
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.selimhorri.app.pack.converters.EmployeeToManager;
+import com.selimhorri.app.pack.converters.EmployeesToManagers;
 import com.selimhorri.app.pack.exceptions.wrappers.NoSuchElementApiException;
+import com.selimhorri.app.pack.models.dto.Manager;
 import com.selimhorri.app.pack.models.entities.Employee;
 import com.selimhorri.app.pack.repositories.EmployeeRepository;
 import com.selimhorri.app.pack.services.EmployeeService;
@@ -20,6 +23,12 @@ import com.selimhorri.app.pack.services.EmployeeService;
 public class EmployeeServiceImpl implements EmployeeService {
 	
 	private final EmployeeRepository rep;
+	
+	@Autowired
+	private EmployeeToManager employeeToManager;
+	
+	@Autowired
+	private EmployeesToManagers employeesToManagers;
 	
 	@Autowired
 	public EmployeeServiceImpl(final EmployeeRepository rep) {
@@ -70,8 +79,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 	
 	@Override
-	public Set<Employee> getManagers() {
-		return this.rep.getManagers();
+	public Set<Manager> findAllManagers() {
+		return this.employeesToManagers.convert(this.rep.findAllManagers());
+	}
+	
+	@Override
+	public Manager findManagerById() {
+		return this.employeeToManager.convert(this.rep.findManagerById());
 	}
 	
 	

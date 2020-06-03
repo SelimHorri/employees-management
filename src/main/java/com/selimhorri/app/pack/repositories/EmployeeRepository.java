@@ -11,8 +11,11 @@ import com.selimhorri.app.pack.models.entities.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	
-	@Query(name = "Set.getManagers", nativeQuery = true)
-	public abstract Set<Employee> getManagers();
+	@Query(name = "Employee.findAllManagers", nativeQuery = true)
+	public abstract Set<Employee> findAllManagers();
+	
+	@Query(name = "Employee.findManagerById", nativeQuery = true)
+	public abstract Employee findManagerById();
 	
 }
 

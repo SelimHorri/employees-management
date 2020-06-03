@@ -38,6 +38,25 @@ public class ApiHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(exceptionMsg, badRequest);
 	}
 	
+	/*
+	@Profile(value = {"dev", "qa"})
+	@ExceptionHandler(
+		value = {
+			RuntimeException.class
+		}
+	)
+	public <T extends RuntimeException> ResponseEntity<ExceptionMsg> handleAllRuntimeExceptions(final T exception, final WebRequest webRequest) {
+		
+		final HttpStatus badRequest = HttpStatus.BAD_REQUEST;
+		final ExceptionMsg exceptionMsg = new ExceptionMsg(exception.getMessage(), badRequest, exception, ZonedDateTime.now(ZoneId.systemDefault()));
+		
+		System.err.println(exceptionMsg);
+		System.err.println(webRequest);
+		
+		return new ResponseEntity<>(exceptionMsg, badRequest);
+	}
+	*/
+	
 	
 	
 }

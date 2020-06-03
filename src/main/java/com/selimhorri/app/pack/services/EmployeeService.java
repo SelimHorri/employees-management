@@ -3,6 +3,7 @@ package com.selimhorri.app.pack.services;
 import java.util.List;
 import java.util.Set;
 
+import com.selimhorri.app.pack.models.dto.Manager;
 import com.selimhorri.app.pack.models.entities.Employee;
 
 public interface EmployeeService {
@@ -13,8 +14,8 @@ public interface EmployeeService {
 	public abstract Employee save(final Employee employee);
 	public abstract Employee updateById(final int id);
 	public abstract void deleteById(final int id);
-	
-	public abstract Set<Employee> getManagers();
+	public abstract Set<Manager> findAllManagers();
+	public abstract Manager findManagerById();
 	
 }
 

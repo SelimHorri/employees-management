@@ -2,6 +2,7 @@ package com.selimhorri.app.pack.controllers;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import javax.validation.Valid;
 
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.selimhorri.app.pack.exceptions.wrappers.NumberFormatApiException;
+import com.selimhorri.app.pack.models.dto.Manager;
 import com.selimhorri.app.pack.models.entities.Employee;
 import com.selimhorri.app.pack.services.EmployeeService;
 
@@ -79,6 +81,16 @@ public class EmployeeController {
 			throw new NumberFormatApiException("------------ Missed arg(s) in URL : " + this.getClass().getSimpleName().replace("Controller", "").toLowerCase() + " ------------");
 		
 		this.service.deleteById(Integer.parseInt(id));
+	}
+	
+	@GetMapping(value = {"/managers"})
+	public ResponseEntity<Set<Manager>> findAllManagers() {
+		return new ResponseEntity<>(this.service.findAllManagers(), HttpStatus.OK);
+	}
+	
+	@GetMapping(value = {"/manager"})
+	public ResponseEntity<Manager> findManagerById() {
+		return new ResponseEntity<>(this.service.findManagerById(), HttpStatus.OK);
 	}
 	
 	
